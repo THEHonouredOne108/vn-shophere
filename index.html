@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopZone | Premium E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome icons for search and shopping cart -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Shop<span>Zone</span></a>
+      
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search premium products...">
+        <button><i class="fa-solid => fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">Exclusive Collection 2026</span>
+      <h1>Upgrade Your Lifestyle With Premium Goods</h1>
+      <p>Discover hand-picked electronics, fashion, and lifestyle items with fast shipping and guaranteed quality.</p>
+      <a href="#products" class="btn-primary">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Main Products Section -->
+  <main class="products-container" id="products">
+    <div class="section-title">
+      <h2>Featured Products</h2>
+      <p>Explore our latest trending releases</p>
+    </div>
+
+    <!-- Product Grid populated dynamically via JS -->
+    <div class="product-grid" id="productGrid">
+      <p class="loading">Loading products...</p>
+    </div>
+  </main>
+
+  <!-- Shopping Cart Modal Window -->
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h3>Your Shopping Cart</h3>
+        <button class="close-btn" id="closeCart">&times;</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <p class="empty-msg">Your cart is currently empty.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="btn-checkout" onclick="alert('Proceeding to checkout!')">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2026 ShopZone. All rights reserved. Designed for excellence.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
